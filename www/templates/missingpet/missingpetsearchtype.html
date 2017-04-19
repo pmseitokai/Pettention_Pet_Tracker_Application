@@ -1,0 +1,67 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToMissing()">
+                <span><i class="material-icons md-70" >&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3">
+              <div class="TextTitleBar-3-1">
+                <span>Missing Pet Search</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+
+        <div style="width:100%;text-align:center">
+          <h3>Choose Missing pet'type to search.</h3>
+          <div class="SignUpForm-1-1 row">
+                  <div class="SignUpForm-1-1 row">
+                    <div class="col-xs-4">
+                      <span style="font-size:15px;">Type:</span>
+                    </div>
+                    <div class="col-xs-8">
+                      <span style="font-size:15px;">
+                        <select style="width:50vw;height:20px;font-size:15px;" ng-model="petData.type" ng-change="searchMissingPetByType()">
+                          <option value="dog">Dog</option>
+                          <option value="cat">Cat</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </span>
+                    </div>
+                  </div>
+            </div>
+          <br>
+          
+        <br>
+        {{searchMessage}}
+        <br>
+          <div style="width:90%;border:2px solid black;margin-left:5%;margin-right:5%" ng-repeat="petData in petData" ng-click="goToMissingTrack(petData)">
+        <br>
+          <table>
+            <tr>
+              <td rowspan="2">
+                Picture: <img src="{{petData.picture}}" width="80px" height="100px">
+              </td>
+              <td>
+                Pet ID: {{petData.pet_id}}
+              </td>
+              <td>
+                &nbsp;Name: {{petData.name}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!--Last Seen: {{petData.date_time}}-->
+              </td>
+            </tr>
+          </table>
+          <br>
+        </div>
+
+        </div>
+
+</div>

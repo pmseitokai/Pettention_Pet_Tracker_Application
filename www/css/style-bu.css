@@ -1,0 +1,1742 @@
+@media only screen and (min-width : 400px) {
+
+    /*------login------*/
+    #login_page{
+      width: 412px;
+      height: 735px;
+      background-size: cover;
+      background-image: url('../img/pinkBG.png');
+      background-color: #FFE6BA;
+    }
+
+    #login_form {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        line-height: 200%
+    }
+
+    #input_form{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;    
+        margin-bottom: 5%;
+    }
+
+    /*------login------*/
+
+    /*------first page[Mono]------*/
+
+    #firstPage_dog_pic{
+      width: 70%;
+    }
+
+    /*---------- F O N T ----------*/
+
+    @font-face {
+      font-family: "Roboto-Regular";
+      src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), 
+           url("../fonts/Roboto-Regular.woff") format("woff"), 
+           url("../fonts/Roboto-Regular.ttf")  format("truetype"),
+           url("../fonts/Roboto-Regular.svg#svgFontName") format("svg");
+    }
+    @font-face {
+      font-family: "materialdesignjim-Regular";
+      src: url("../fonts/materialdesignjim-Regular.eot?#iefix") format("embedded-opentype"), 
+           url("../fonts/materialdesignjim-Regular.woff") format("woff"), 
+           url("../fonts/materialdesignjim-Regular.ttf")  format("truetype"),
+           url("../fonts/materialdesignjim-Regular.svg#svgFontName") format("svg");
+    }
+
+
+    /*---------- B O D Y ----------*/
+
+    /*---------- 02 - Sign Up ----------*/
+
+    /*---Background---*/
+    body {
+        background-color: #FFE6BA;
+        margin: 0%;
+    }
+
+    .Background-1 {
+        background-color: #FFE6BA;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+
+    /*---Header---*/
+    .Header-1 {
+        background-color: #F74A5B;
+        width: 100%;
+        height: 120px;
+        min-width: 300px;
+        position: relative;
+    }
+
+    /*---BackButton---*/
+    .BackButton-1{
+        background-color: #F74A5B;
+        width: 15%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .BackButton-1-1{
+        background-color: #FC8D98;
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        top: 25%;
+        left: 10%; 
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .BackButton-1-1 span{
+        color: #FDB9BF;
+        font-family: "materialdesignjim-Regular",Arial;
+        font-size: 50px;
+    }
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-1 {
+        position: relative;
+        float: right;
+        width: 85%;
+        height: 100%;
+        top: 40%;
+        right: 5%;
+        background-color: transparent; /*transparent*/
+    }
+
+
+    .TextTitleBar-1-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-1-1 span{
+        color: #FDB9BF;
+        font-size: 105px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    /*---------- 0 - HOME PAGE ----------*/
+    /*---MenuButton---*/
+    .MenuButton-1{
+        background-color: #F74A5B;/*#F74A5B*/
+        width: 20%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .MenuButton-1-1{
+        background-color: transparent;/*#FC8D98*/
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        top: 37%;
+        left: 10%; 
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .MenuButton-1-1 span{
+        color: #FDB9BF;
+        font-family: "materialdesignjim-Regular",Arial;
+        font-size: 50px;
+    }
+
+    /*---Map Area - Homepage---*/
+    .MapHomePageArea-1{
+        background-color: #ffffff;
+        width: 100%;
+        height: 40vh;
+        position: relative;
+    }
+
+    /*---My Pets - Table Header---*/
+    .MyPetsHeader-1{
+        background-color: #fca894;
+        width: 250px;
+        height: 100px;
+        max-width: 250px;
+        min-width: 250px; 
+        max-height: 100px; 
+        min-height: 100px;
+        position: relative;
+        border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-collapse: collapse;
+    }
+
+    .MyPetsHeader-1 span{
+        color: #F74A5B;
+        font-size: 50px;
+        font-family: "Roboto-Regular",Arial;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+
+    .MyPetsHeader-2{
+        background-color: #fca894;
+        width: 100%;
+        height: 70px;
+        max-width: 100%; 
+        min-width: 100%; 
+        max-height: 70px; 
+        min-height: 70px;
+        position: relative;
+        border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+        text-align: right;
+    }
+
+    .MyPetsHeader-2 span{
+        color: #F74A5B;
+        font-size: 70px;
+        font-weight: bold;
+        padding-left: 20px;
+        font-family: "materialdesignjim-Regular",Arial;
+        padding-right: 20px; 
+    }
+
+    /*---.ThGpsStatus {
+      width: 100px; 
+      height: 70px;
+      max-width: 100px;
+      min-width: 100px; 
+      max-height: 70px; 
+      min-height: 70px;
+      background-color: #fca894;
+    }
+
+    .ThPetImg {
+      width: 100px; 
+      height: 70px;
+      max-width: 100px;
+      min-width: 100px; 
+      max-height: 70px; 
+      min-height: 70px;
+      background-color: #fca894;
+    }
+
+    .ThPetIo {
+      width: 100px; 
+      height: 70px;
+      max-width: 100px;
+      min-width: 100px; 
+      max-height: 70px; 
+      min-height: 70px;
+      background-color: #fca894;
+    }
+    --*/
+
+    /*---My Pets - Table Body---*/
+    .MyPetsTable-1{
+        background-color: #FFE6BA;
+        width: 100%;
+        height: 60%;
+        position: relative;
+    }
+
+    /*.TableStyle-1 table, th, td{
+       border: 1px solid #F74A5B;
+       border-left: 0px;
+       border-right: 0px;
+    }*/
+
+    .TableStyle-1 table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    /*---My Pets - GPS---*/
+    .TdGpsStatusOn {
+      width: 120px; 
+      height: 220px;
+      max-width: 120px;
+      min-width: 120px; 
+      max-height: 220px; 
+      min-height: 220px;
+      text-align: center;
+      color: green;
+      font-family: "materialdesignjim-Regular",Arial;
+      font-size: 60px;
+      font-weight: bold;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    .TdGpsStatusOff {
+      width: 120px; 
+      height: 220px;
+      max-width: 120px;
+      min-width: 120px; 
+      max-height: 220px; 
+      min-height: 220px;
+      text-align: center;
+      color: red;
+      font-family: "materialdesignjim-Regular",Arial;
+      font-size: 60px;
+      font-weight: bold;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    /*---My Pets - Pet Image---*/
+    .TdPetImg {
+      width: 200px; 
+      height: 100px;
+      max-width: 200px;
+      min-width: 200px; 
+      max-height: 100px; 
+      min-height: 100px;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    .MyPetImgFrame-1-1-1 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .MyPetImgFrame-1-1-1 img{
+      background-color: #fca894;
+      border-radius: 100%;
+      width: 70%; 
+      height: 70%;
+      max-width: 70%;
+      min-width: 70%; 
+      max-height: 70%; 
+      min-height: 70%;
+      border: 3px solid #FFE6BA;
+      position: relative;
+      top: 4.2%;
+      left: 4.2%;
+    }
+
+    .MyPetImgFrame-1-1 {
+      background-color: #f74a5b;
+      border-radius: 100%;
+      width: 85%; 
+      height: 85%;
+      max-width: 85%;
+      min-width: 85%; 
+      max-height: 85%; 
+      min-height: 85%;
+      position: relative;
+      top: 7%;
+      left: 7%;
+    }
+
+    .MyPetImgFrame-1 {
+      width: 192px; 
+      height: 192px;
+      background-color: transparent;
+    }
+
+    /*---My Pets - Table Info---*/
+    .TdPetInfo {
+      background-color: transparent;
+      width: 100%; 
+      height: 200px;
+      max-width: 100%; 
+      min-width: 100%; 
+      max-height: 200px; 
+      min-height: 200px;
+      text-align: center;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    /*.MyPetInfo-1-1-1 table{
+      font-size: 20px;
+      font-weight: bold;
+      padding-left: 20px;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+    }
+
+    .MyPetInfo-1-1-1 td, th{
+      font-size: 20px;
+      font-weight: bold;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+    }*/
+
+    .MyPetInfo-1-1 {
+      background-color: #fca894;
+      border-radius: 0%;
+      width: 90%; 
+      height: 85%;
+      max-width: 90%;
+      min-width: 90%; 
+      max-height: 85%; 
+      min-height: 85%;
+      position: relative;
+      top: 7%;
+      left: 3%;
+    }
+
+    .MyPetInfo-1{
+      width: 100%; 
+      height: 200px;
+      background-color: transparent;
+    }
+
+    .MyPetInfoName-1{
+        width: 150px; 
+      height: 90px;
+      max-width: 150px;
+      min-width: 150px; 
+      max-height: 90px; 
+      min-height: 90px;
+        font-size: 45px;
+      font-weight: bold;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+        text-align: left;
+          border: 1px solid #F74A5B;
+            border-right: 0px;
+        border-left: 0px;
+        border-top: 0px;
+        padding-left: 5px;
+    }
+
+    .MyPetInfoName-2{        
+      width: 100%; 
+      height: 90px;
+      max-width: 100%; 
+      min-width: 100%; 
+      max-height: 90px; 
+      min-height: 90px;
+    font-size: 45px;
+      color: black;
+      font-family: "Roboto-Regular",Arial;
+        text-align: left;
+          border: 1px solid #F74A5B;
+            border-right: 0px;
+        border-left: 0px;
+        border-top: 0px;
+        padding-left: 5px;
+    }
+
+    .MyPetInfoLast-1{
+          width: 150px; 
+      height: 80px;
+      max-width: 150px;
+      min-width: 150px; 
+      max-height: 80px; 
+      min-height: 80px;
+        font-size: 35px;
+      font-weight: bold;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+      text-align: left;
+          border: 0px;
+        padding-left: 5px;
+    }
+
+    .MyPetInfoLast-2{
+            width: 100%; 
+      height: 30px;
+      max-width: 100%; 
+      min-width: 100%; 
+      max-height: 30px; 
+      min-height: 30px;
+        font-size: 35px;
+      color: black;
+      font-family: "Roboto-Regular",Arial;
+        text-align: left;
+          border: 0px;
+        padding-left: 5px;
+    }
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-2 {
+        position: relative;
+        float: right;
+        width: 70%;
+        height: 100%;
+        top: 40%;
+        right: 0%; /*5%*/
+        background-color: transparent; /*transparent*/
+    }
+
+    .TextTitleBar-2-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-2-1 span{
+        color: #FDB9BF;
+        font-size: 45px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    /*---User Location TitleBar---*/
+    .UserLocationTitleBar-1 {
+        position: relative;
+        float: right;
+        width: 15%;
+        height: 100%;
+        top: 55%;
+        right: 0%; /*5%*/
+        background-color: transparent; /*transparent*/
+    }
+
+    .UserLocationTitleBar-1-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .UserLocationTitleBar-1-1 span{
+        color: #FDB9BF;
+        font-size: 30px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    /*---------- 0 - Sign Up + Login + Forgot----------*/
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-3 {
+        position: relative;
+        float: right;
+        width: 85%;
+        height: 100%;
+        top: 47%;
+        right: 5%;
+        background-color: transparent; /*transparent*/
+    }
+
+    .TextTitleBar-3-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-3-1 span{
+        color: #FDB9BF;
+        font-size: 45px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    /*--- SignUp Form ---*/
+    .SignUpForm-1{
+        background-color: transparent;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        left: 10%;
+    }
+
+    .SignUpForm-1-1{
+        color: #F74A5B;
+        text-align: left;
+    }
+
+    .SignUpForm-1 span{
+        color: #30A393;
+        font-size: 30px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    .SignUpForm-1 p{
+        color: #30A393;
+        font-size: 20px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    .SignUpForm-1-1 input{
+        background-color: transparent;
+        color: #30A393;
+        font-size: 25px;
+        font-family: "Roboto-Regular",Arial;
+        border-color: #30A393;
+        border-style: solid;
+        border-width: 7px;
+        border-right-width: 0px;
+        border-right-color: transparent;
+        border-left-width: 0px;
+        border-left-color: transparent;
+        border-top-width: 0px;
+        border-top-color: transparent;
+
+    }
+
+    /*--- SignUp Button ---*/
+    .SignUpButton-1-1 button{
+        background-color: #30A393;
+        color: #ADEEE5;
+        font-size: 25px;
+        font-family: "Roboto-Regular",Arial;
+        border-color: #ADEEE5;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 50px;
+    }
+
+
+    /*---------- 0 - Forgot Password ----------*/
+
+    .ForgotPasswordForm-1{
+        background-color: transparent;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        left: 10%;
+    }
+
+    .ForgotPasswordForm-1 span{
+        color: #30A393;
+        font-size: 18px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+
+    /*---------- 0 - Index ----------*/
+
+    /*---Header---*/
+    .Header-2 {
+        background-color: transparent;
+        width: 100%;
+        height: 220px; /*250px*/
+        min-width: 300px;
+        position: relative;
+    }
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-4 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 20%;
+        right: 0%;
+        background-color: transparent; /*transparent*/
+    }
+
+    .TextTitleBar-4-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-4-1 span{
+        color: #FDB9BF;
+        font-size: 5em;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    #BodyBg-1{    
+        background-image: url('../img/pinkBG.png');
+        background-color: #FFE6BA;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-repeat: repeat-x;
+        margin: 0%;
+        position: fixed;
+    }
+
+
+    .Body-2{
+        background-color: transparent;
+        width: 100%;
+        min-width: 300px;
+        position: relative;
+    }
+
+    /*--- Index Button ---*/
+    .IndexButton-1-1 button{
+        background-color: #30A393;
+        color: #ADEEE5;
+        font-size: 2em;
+        font-family: "Roboto-Regular",Arial;
+        border-color: #ADEEE5;
+        border-style: solid;
+        border-width: 3px;
+    }
+
+    #ILoginButton{
+        border-top-left-radius: 90px;
+        border-bottom-left-radius: 90px;
+        width: 35%;
+    }
+
+    #ISignUpButton{
+        border-top-right-radius: 90px;
+        border-bottom-right-radius: 90px;
+        width: 35%;
+    }
+
+    .IndexButton-1-1  p{
+        color: #30A393;
+        font-size: 35px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    /*---TextFooter---*/
+    .TextTitleBar-5 {
+
+        position: absolute;
+        float: right;
+        width: 100%;
+        background-color: #FFE6BA; /*transparent*/
+    }
+
+    .TextTitleBar-5-1{
+        background-color: #FFE6BA;
+    }
+
+    .IndexButton-2-1  p{
+        color: #30A393;
+        font-size: 1em;
+        font-family: "Roboto-Regular",Arial;
+        text-align: center;
+    }
+
+
+    /*---------- google icon css ----------*/
+
+
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+      src: local('Material Icons'),
+           local('MaterialIcons-Regular'),
+           url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+           url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+           url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url("../fonts/MaterialIcons-Regular.eot?#iefix") format("embedded-opentype"), 
+           url("../fonts/MaterialIcons-Regular.woff2") format("woff2"),
+           url("../fonts/MaterialIcons-Regular.woff") format("woff"), 
+           url("../fonts/MaterialIcons-Regular.ttf")  format("truetype"),
+           url("../fonts/MaterialIcons-Regular.svg#svgFontName") format("svg");
+    }
+
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
+
+    /* Rules for sizing the icon. */
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    /*.material-icons.md-48 { font-size: 48px; }*/
+    .material-icons.md-80 { font-size: 80px; }
+    .material-icons.md-105 { font-size: 105px; }
+
+    .material-icons.md-70 { font-size: 70px; }
+
+    .material-icons.md-50 { font-size: 50px; }
+
+    .material-icons.md-30 { font-size: 30px; }
+
+    /* Rules for using icons as black on a light background. */
+    .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+    /* Rules for using icons as white on a dark background. */
+    .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+    .material-icons.orange600 { color: #FB8C00; }
+    /*------------------------------------------*/
+
+    /*------------Home page---------------------*/
+
+    #home_head{
+      height: 350px;
+      text-align: center;
+    }
+
+    #user_topright{
+      width: 95%;
+      text-align: right;
+      font-size: 1.5em;
+      margin-top: 5%;
+      margin-right: 5%;
+    }
+
+    #user_pic{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    .home_user_pic{
+      height: 100%;
+      width: 100%;
+    }
+
+    #home_body{
+      width: 100%;
+      height: 400px;
+      margin-top: 10%;
+    }
+
+    #home_body_table{
+      width: 90%;
+      text-align: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 50%;
+    }
+
+    .table_30{
+      width: 30%;
+    }
+
+    .home_menu_icon{
+      height: 75px;
+      width: 75px;
+      margin: auto;
+    }
+
+    .home_menu_icon_pic{
+      height: 100%;
+      width: 100%;
+    }
+
+    .menu_name{
+      font-family: "Roboto-Regular",Arial;
+      font-size: 1.2em;
+    }
+
+}
+
+
+
+
+
+
+ /*-----------Screen with below 400---------*/
+@media only screen and (max-width : 399px) {
+
+    /*------login------*/
+    #login_page{
+      height: 600px;
+      background-size: cover;
+      background-image: url('../img/pinkBG.png');
+      background-color: #FFE6BA;
+    }
+
+    #login_form {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        line-height: 200%
+    }
+
+    #input_form{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;    
+        margin-bottom: 5%;
+    }
+
+    /*------login------*/
+
+    /*------first page[Mono]------*/
+
+    #firstPage_dog_pic{
+      width: 70%;
+    }
+
+    /*---------- F O N T ----------*/
+
+    @font-face {
+      font-family: "Roboto-Regular";
+      src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), 
+           url("../fonts/Roboto-Regular.woff") format("woff"), 
+           url("../fonts/Roboto-Regular.ttf")  format("truetype"),
+           url("../fonts/Roboto-Regular.svg#svgFontName") format("svg");
+    }
+    @font-face {
+      font-family: "materialdesignjim-Regular";
+      src: url("../fonts/materialdesignjim-Regular.eot?#iefix") format("embedded-opentype"), 
+           url("../fonts/materialdesignjim-Regular.woff") format("woff"), 
+           url("../fonts/materialdesignjim-Regular.ttf")  format("truetype"),
+           url("../fonts/materialdesignjim-Regular.svg#svgFontName") format("svg");
+    }
+
+
+    /*---------- B O D Y ----------*/
+
+    /*---------- 02 - Sign Up ----------*/
+
+    /*---Background---*/
+    body {
+        background-color: #FFE6BA;
+        margin: 0%;
+    }
+
+    .Background-1 {
+        background-color: #FFE6BA;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+
+    /*---Header---*/
+    .Header-1 {
+        background-color: #F74A5B;
+        width: 100%;
+        height: 110px;
+        min-width: 300px;
+        position: relative;
+    }
+
+    /*---BackButton---*/
+    .BackButton-1{
+        background-color: #F74A5B;
+        width: 15%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .BackButton-1-1{
+        background-color: #FC8D98;
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        top: 25%;
+        left: 10%; 
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .BackButton-1-1 span{
+        color: #FDB9BF;
+        font-family: "materialdesignjim-Regular",Arial;
+        font-size: 50px;
+    }
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-1 {
+        position: relative;
+        float: right;
+        width: 85%;
+        height: 100%;
+        top: 40%;
+        right: 5%;
+        background-color: transparent; /*transparent*/
+    }
+
+
+    .TextTitleBar-1-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-1-1 span{
+        color: #FDB9BF;
+        font-size: 105px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    /*---------- 0 - HOME PAGE ----------*/
+    /*---MenuButton---*/
+    .MenuButton-1{
+        background-color: #F74A5B;/*#F74A5B*/
+        width: 20%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .MenuButton-1-1{
+        background-color: transparent;/*#FC8D98*/
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        top: 37%;
+        left: 10%; 
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .MenuButton-1-1 span{
+        color: #FDB9BF;
+        font-family: "materialdesignjim-Regular",Arial;
+        font-size: 55px;
+    }
+
+    /*---Map Area - Homepage---*/
+    .MapHomePageArea-1{
+        background-color: #ffffff;
+        width: 100%;
+        height: 40vh;
+        position: relative;
+    }
+
+    /*---My Pets - Table Header---*/
+    .MyPetsHeader-1{
+        background-color: #fca894;
+        width: 250px;
+        height: 100px;
+        max-width: 250px;
+        min-width: 250px; 
+        max-height: 100px; 
+        min-height: 100px;
+        position: relative;
+        border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-collapse: collapse;
+    }
+
+    .MyPetsHeader-1 span{
+        color: #F74A5B;
+        font-size: 50px;
+        font-family: "Roboto-Regular",Arial;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+
+    .MyPetsHeader-2{
+        background-color: #fca894;
+        width: 100%;
+        height: 70px;
+        max-width: 100%; 
+        min-width: 100%; 
+        max-height: 70px; 
+        min-height: 70px;
+        position: relative;
+        border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+        text-align: right;
+    }
+
+    .MyPetsHeader-2 span{
+        color: #F74A5B;
+        font-size: 70px;
+        font-weight: bold;
+        padding-left: 20px;
+        font-family: "materialdesignjim-Regular",Arial;
+        padding-right: 20px; 
+    }
+
+    /*---.ThGpsStatus {
+      width: 100px; 
+      height: 70px;
+      max-width: 100px;
+      min-width: 100px; 
+      max-height: 70px; 
+      min-height: 70px;
+      background-color: #fca894;
+    }
+
+    .ThPetImg {
+      width: 100px; 
+      height: 70px;
+      max-width: 100px;
+      min-width: 100px; 
+      max-height: 70px; 
+      min-height: 70px;
+      background-color: #fca894;
+    }
+
+    .ThPetIo {
+      width: 100px; 
+      height: 70px;
+      max-width: 100px;
+      min-width: 100px; 
+      max-height: 70px; 
+      min-height: 70px;
+      background-color: #fca894;
+    }
+    --*/
+
+    /*---My Pets - Table Body---*/
+    .MyPetsTable-1{
+        background-color: #FFE6BA;
+        width: 100%;
+        height: 60%;
+        position: relative;
+    }
+
+    /*.TableStyle-1 table, th, td{
+       border: 1px solid #F74A5B;
+       border-left: 0px;
+       border-right: 0px;
+    }*/
+
+    .TableStyle-1 table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    /*---My Pets - GPS---*/
+    .TdGpsStatusOn {
+      width: 120px; 
+      height: 220px;
+      max-width: 120px;
+      min-width: 120px; 
+      max-height: 220px; 
+      min-height: 220px;
+      text-align: center;
+      color: green;
+      font-family: "materialdesignjim-Regular",Arial;
+      font-size: 60px;
+      font-weight: bold;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    .TdGpsStatusOff {
+      width: 120px; 
+      height: 220px;
+      max-width: 120px;
+      min-width: 120px; 
+      max-height: 220px; 
+      min-height: 220px;
+      text-align: center;
+      color: red;
+      font-family: "materialdesignjim-Regular",Arial;
+      font-size: 60px;
+      font-weight: bold;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    /*---My Pets - Pet Image---*/
+    .TdPetImg {
+      width: 200px; 
+      height: 100px;
+      max-width: 200px;
+      min-width: 200px; 
+      max-height: 100px; 
+      min-height: 100px;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    .MyPetImgFrame-1-1-1 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .MyPetImgFrame-1-1-1 img{
+      background-color: #fca894;
+      border-radius: 100%;
+      width: 70%; 
+      height: 70%;
+      max-width: 70%;
+      min-width: 70%; 
+      max-height: 70%; 
+      min-height: 70%;
+      border: 3px solid #FFE6BA;
+      position: relative;
+      top: 4.2%;
+      left: 4.2%;
+    }
+
+    .MyPetImgFrame-1-1 {
+      background-color: #f74a5b;
+      border-radius: 100%;
+      width: 85%; 
+      height: 85%;
+      max-width: 85%;
+      min-width: 85%; 
+      max-height: 85%; 
+      min-height: 85%;
+      position: relative;
+      top: 7%;
+      left: 7%;
+    }
+
+    .MyPetImgFrame-1 {
+      width: 192px; 
+      height: 192px;
+      background-color: transparent;
+    }
+
+    /*---My Pets - Table Info---*/
+    .TdPetInfo {
+      background-color: transparent;
+      width: 100%; 
+      height: 200px;
+      max-width: 100%; 
+      min-width: 100%; 
+      max-height: 200px; 
+      min-height: 200px;
+      text-align: center;
+          border: 1px solid #F74A5B;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-collapse: collapse;
+    }
+
+    /*.MyPetInfo-1-1-1 table{
+      font-size: 20px;
+      font-weight: bold;
+      padding-left: 20px;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+    }
+
+    .MyPetInfo-1-1-1 td, th{
+      font-size: 20px;
+      font-weight: bold;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+    }*/
+
+    .MyPetInfo-1-1 {
+      background-color: #fca894;
+      border-radius: 0%;
+      width: 90%; 
+      height: 85%;
+      max-width: 90%;
+      min-width: 90%; 
+      max-height: 85%; 
+      min-height: 85%;
+      position: relative;
+      top: 7%;
+      left: 3%;
+    }
+
+    .MyPetInfo-1{
+      width: 100%; 
+      height: 200px;
+      background-color: transparent;
+    }
+
+    .MyPetInfoName-1{
+        width: 150px; 
+      height: 90px;
+      max-width: 150px;
+      min-width: 150px; 
+      max-height: 90px; 
+      min-height: 90px;
+        font-size: 45px;
+      font-weight: bold;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+        text-align: left;
+          border: 1px solid #F74A5B;
+            border-right: 0px;
+        border-left: 0px;
+        border-top: 0px;
+        padding-left: 5px;
+    }
+
+    .MyPetInfoName-2{        
+      width: 100%; 
+      height: 90px;
+      max-width: 100%; 
+      min-width: 100%; 
+      max-height: 90px; 
+      min-height: 90px;
+    font-size: 45px;
+      color: black;
+      font-family: "Roboto-Regular",Arial;
+        text-align: left;
+          border: 1px solid #F74A5B;
+            border-right: 0px;
+        border-left: 0px;
+        border-top: 0px;
+        padding-left: 5px;
+    }
+
+    .MyPetInfoLast-1{
+          width: 150px; 
+      height: 80px;
+      max-width: 150px;
+      min-width: 150px; 
+      max-height: 80px; 
+      min-height: 80px;
+        font-size: 35px;
+      font-weight: bold;
+      color: #F74A5B;
+      font-family: "Roboto-Regular",Arial;
+      text-align: left;
+          border: 0px;
+        padding-left: 5px;
+    }
+
+    .MyPetInfoLast-2{
+            width: 100%; 
+      height: 30px;
+      max-width: 100%; 
+      min-width: 100%; 
+      max-height: 30px; 
+      min-height: 30px;
+        font-size: 35px;
+      color: black;
+      font-family: "Roboto-Regular",Arial;
+        text-align: left;
+          border: 0px;
+        padding-left: 5px;
+    }
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-2 {
+        position: relative;
+        float: right;
+        width: 70%;
+        height: 100%;
+        top: 40%;
+        right: 0%; /*5%*/
+        background-color: transparent; /*transparent*/
+    }
+
+    .TextTitleBar-2-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-2-1 span{
+        color: #FDB9BF;
+        font-size: 105px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    /*---User Location TitleBar---*/
+    .UserLocationTitleBar-1 {
+        position: relative;
+        float: right;
+        width: 15%;
+        height: 100%;
+        top: 40%;
+        right: 0%; /*5%*/
+        background-color: transparent; /*transparent*/
+    }
+
+    .UserLocationTitleBar-1-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .UserLocationTitleBar-1-1 span{
+        color: #FDB9BF;
+        font-size: 105px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    /*---------- 0 - Sign Up + Login + Forgot----------*/
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-3 {
+        position: relative;
+        float: right;
+        width: 85%;
+        height: 100%;
+        top: 47%;
+        right: 5%;
+        background-color: transparent; /*transparent*/
+    }
+
+    .TextTitleBar-3-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-3-1 span{
+        color: #FDB9BF;
+        font-size: 35px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    /*--- SignUp Form ---*/
+    .SignUpForm-1{
+        background-color: transparent;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        left: 10%;
+    }
+
+    .SignUpForm-1-1{
+        color: #F74A5B;
+        text-align: left;
+    }
+
+    .SignUpForm-1 span{
+        color: #30A393;
+        font-size: 25px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    .SignUpForm-1 p{
+        color: #30A393;
+        font-size: 15px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+    .SignUpForm-1-1 input{
+        background-color: transparent;
+        color: #30A393;
+        font-size: 20px;
+        font-family: "Roboto-Regular",Arial;
+        border-color: #30A393;
+        border-style: solid;
+        border-width: 7px;
+        border-right-width: 0px;
+        border-right-color: transparent;
+        border-left-width: 0px;
+        border-left-color: transparent;
+        border-top-width: 0px;
+        border-top-color: transparent;
+
+    }
+
+    /*--- SignUp Button ---*/
+    .SignUpButton-1-1 button{
+        background-color: #30A393;
+        color: #ADEEE5;
+        font-size: 20px;
+        font-family: "Roboto-Regular",Arial;
+        border-color: #ADEEE5;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 50px;
+    }
+
+
+    /*---------- 0 - Forgot Password ----------*/
+
+    .ForgotPasswordForm-1{
+        background-color: transparent;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        left: 10%;
+    }
+
+    .ForgotPasswordForm-1 span{
+        color: #30A393;
+        font-size: 16px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    /*---------- 0 - Index ----------*/
+
+    /*---Header---*/
+    .Header-2 {
+        background-color: transparent;
+        width: 100%;
+        height: 195px; /*250px*/
+        min-width: 300px;
+        position: relative;
+    }
+
+    /*---TextTitleBar---*/
+    .TextTitleBar-4 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 20%;
+        right: 0%;
+        background-color: transparent; /*transparent*/
+    }
+
+    .TextTitleBar-4-1{
+        background-color: transparent;
+        color: #FDB9BF;
+        text-align: center;
+    }
+
+    .TextTitleBar-4-1 span{
+        color: #FDB9BF;
+        font-size: 4em;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+    #BodyBg-1{    
+        background-image: url('../img/pinkBG.png');
+        background-color: #FFE6BA;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-repeat: repeat-x;
+        margin: 0%;
+        position: fixed;
+    }
+
+
+    .Body-2{
+        background-color: transparent;
+        width: 100%;
+        min-width: 300px;
+        position: relative;
+    }
+
+
+    /*--- Index Button ---*/
+    .IndexButton-1-1 button{
+        background-color: #30A393;
+        color: #ADEEE5;
+        font-size: 1.8em;
+        font-family: "Roboto-Regular",Arial;
+        border-color: #ADEEE5;
+        border-style: solid;
+        border-width: 3px;
+    }
+
+    #ILoginButton{
+        border-top-left-radius: 90px;
+        border-bottom-left-radius: 90px;
+        width: 35%;
+    }
+
+    #ISignUpButton{
+        border-top-right-radius: 90px;
+        border-bottom-right-radius: 90px;
+        width: 35%;
+    }
+
+    .IndexButton-1-1  p{
+        color: #30A393;
+        font-size: 35px;
+        font-family: "Roboto-Regular",Arial;
+    }
+
+
+
+
+    /*---TextFooter---*/
+    .TextTitleBar-5 {
+
+        position: absolute;
+        float: right;
+        width: 100%;
+        background-color: #FFE6BA; /*transparent*/
+    }
+
+    .TextTitleBar-5-1{
+        background-color: #FFE6BA;
+    }
+
+    .IndexButton-2-1  p{
+        color: #30A393;
+        font-size: 1em;
+        font-family: "Roboto-Regular",Arial;
+        text-align: center;
+    }
+
+    /*---------- google icon css ----------*/
+
+
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+      src: local('Material Icons'),
+           local('MaterialIcons-Regular'),
+           url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+           url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+           url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url("../fonts/MaterialIcons-Regular.eot?#iefix") format("embedded-opentype"), 
+           url("../fonts/MaterialIcons-Regular.woff2") format("woff2"),
+           url("../fonts/MaterialIcons-Regular.woff") format("woff"), 
+           url("../fonts/MaterialIcons-Regular.ttf")  format("truetype"),
+           url("../fonts/MaterialIcons-Regular.svg#svgFontName") format("svg");
+    }
+
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
+
+    /* Rules for sizing the icon. */
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    /*.material-icons.md-48 { font-size: 48px; }*/
+    .material-icons.md-80 { font-size: 80px; }
+    .material-icons.md-105 { font-size: 105px; }
+    .material-icons.md-70 { font-size: 55px; }
+
+    .material-icons.md-50 { font-size: 35px; }
+
+    .material-icons.md-30 { font-size: 30px; }
+
+    /* Rules for using icons as black on a light background. */
+    .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+    /* Rules for using icons as white on a dark background. */
+    .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
+    .material-icons.orange600 { color: #FB8C00; }
+    /*------------------------------------------*/
+
+    /*------------Home page---------------------*/
+
+    #home_head{
+      height: 300px;
+      text-align: center;
+    }
+
+    #user_topright{
+      width: 95%;
+      text-align: right;
+      font-size: 1.5em;
+      margin-top: 5%;
+      margin-right: 5%;
+      font-family: "Roboto-Regular",Arial;
+    }
+
+    #user_pic{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 25%;
+      margin-right: 25%;
+      text-align: center;
+    }
+
+    .home_user_pic{
+      height: 100%;
+      width: 100%;
+    }
+
+    #home_body{
+      width: 100%;
+      height: 400px;
+      margin-top: 5%;
+    }
+
+    #home_body_table{
+      width: 90%;
+      text-align: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 50%;
+    }
+
+    .table_30{
+      width: 30%;
+    }
+
+    .home_menu_icon{
+      height: 50px;
+      width: 50px;
+      margin: auto;
+    }
+
+    .home_menu_icon_pic{
+      height: 100%;
+      width: 100%;
+    }
+
+    .menu_name{
+      font-family: "Roboto-Regular",Arial;
+      font-size: 1.2em;
+    }
+
+
+}

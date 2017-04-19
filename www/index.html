@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<!--    
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<ng-csp ng-app="pettention">
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+        <link href="css/icon.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/w3.css">
+
+        <title>PetTention</title>
+        
+        <script>
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            function onDeviceReady(){
+                document.addEventListener("backbutton", function(e){
+                    resp = confirm("Are you sure to exit app?");
+                    if (resp === true){
+                        e.preventDefault();
+                        navigator.app.exitApp();
+                    }
+                }, false);
+            }
+        </script>
+
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!--Google Map Api ver 3-->
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyC8-7ruTwjyDSbiPW8mZu1Fs1v7tFlnDVk&libraries=places"></script>
+
+        <!--<script type="text/javascript" src="js/ng-map.min.js"></script>
+
+        <script type="text/javascript" src="js/angular-google-maps.min.js"></script>-->
+
+
+    </head>
+    <body>
+
+        <div ui-view class="ng-scope" ></div>
+
+        <script type="text/javascript" src="lib/cordova.js"></script>
+        <script type="text/javascript" src="lib/angular.js"></script>
+        <script type="text/javascript" src="lib/angular-ui-router.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/route.js"></script>
+        <script type="text/javascript" src="js/ngStorage.min.js"></script>
+        <script type="text/javascript" src="js/factory/utils.js"></script>
+        <script type="text/javascript" src="js/lodash.core.min.js"></script>
+        <script type="text/javascript" src="js/angular-material.min.js"></script>
+        <script type="text/javascript" src="js/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/angular-aria.min.js"></script>
+        <script type="text/javascript" src="js/angular-messages.min.js"></script>
+        <script type="text/javascript" src="js/ng-file-upload.js"></script>
+        <script type="text/javascript" src="js/ng-file-upload-all.js"></script>
+        <script type="text/javascript" src="js/ng-file-upload-shim.js"></script>
+        <script type="text/javascript" src="js/angular-fix-image-orientation.js"></script>
+        <script type="text/javascript" src="js/exif.js"></script>
+
+
+        <script type="text/javascript" src="js/controller/login/loginCtrl.js"></script>
+        <script type="text/javascript" src="js/controller/home/homeCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/firstpage/firstPageCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/petprofile/petProfileCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/userprofile/userProfileCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/signup/signUpCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/gmap/gmapCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/contact/contactCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/forgetpassword/forgetPasswordCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/missingpet/missingPetCtrl.js"></script>
+        <script type="text/javascript" src="https://pettention.ga/pettention/js/controller/hospital/hospitalCtrl.js"></script>
+    </body>
+</ng-csp>

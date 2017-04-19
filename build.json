@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "c:\\my-release-key.keystore",
+             "storePassword": "pettention5624",
+             "alias": "monoP",
+             "password" : "pettention5624",
+             "keystoreType": ""
+         }
+     }
+ }

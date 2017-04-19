@@ -1,0 +1,63 @@
+﻿<div id="BodyBg-1" >
+	<div id="home_head">
+		<div id="user_topright" ng-click="goToUserProfile()">
+			user: {{userData.username}}<br>
+		</div>
+		<div id="user_pic">
+			<img src="{{userData.picture}}" class="home_user_pic" ng-click="goToUserProfile()">
+		</div>
+		<h2 ng-click="goToUserProfile()">Welcome {{userData.nickname}} !!</h2><br>
+	</div>
+
+	<div id="home_body">
+		<table id="home_body_table">
+			<tr>
+				<td class="table_30">
+					<div class="home_menu_icon">
+						<img src="img/mypet_icon.png" class="home_menu_icon_pic" ng-click="goToPetProfile()">
+					</div>
+					<br>
+				 	<p class="menu_name">My Pet</p>
+				</td>
+				<td class="table_30">
+					<div class="home_menu_icon">
+						<img src="img/location_icon.png" class="home_menu_icon_pic" ng-click="goToGmap()">
+					</div>
+					<br>
+					<p>GPS</p>
+				</td>
+				<td class="table_30">
+					<div class="home_menu_icon">
+						<img src="img/hospital_icon.png" class="home_menu_icon_pic" ng-click="goToHospital()">
+					</div>
+					<br>
+					<p>Hospital</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="table_30">
+					<div class="home_menu_icon">
+						<img src="img/missing_icon.png" class="home_menu_icon_pic"
+						ng-click="goToMissing()">
+					</div>
+					<br>
+					<p>Missing Pet</p>
+				</td>
+				<td class="table_30">
+					<div class="home_menu_icon">
+						<img src="img/contact_icon.png" class="home_menu_icon_pic" ng-click="goToContact()">
+					</div>
+					<br>
+					<p>Contact Us</p>
+				</td>
+				<td class="table_30">
+					<div class="home_menu_icon">
+						<img src="img/logout_icon.png" class="home_menu_icon_pic" ng-click="logout()">
+					</div>
+					<br>
+					<p>Logout</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

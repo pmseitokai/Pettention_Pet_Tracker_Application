@@ -1,0 +1,151 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToProfile()">
+                <span><i class="material-icons md-70" >&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3">
+              <div class="TextTitleBar-3-1">
+                <span>Edit Profile</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+        <div class="SignUpForm-1" style="height:100%">
+                <br/><br/>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-6">
+                    <span style="font-size:22px;">My profile</span>
+                  </div>
+                  <div class="col-xs-5">
+                    <span style="font-size:15px;">
+                        <div style="width:100px;height:100px;">
+                            <img src="{{userData.picture}}" class="home_user_pic" style="border-radius:50%;">
+                        </div>            
+                    </span>
+                  </div>
+                  <div class="col-xs-1">
+                  </div>
+                </div>
+
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Picture:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <button class="btn-group" ngf-select ng-model="userData.picFile" name="picFile" ngf-pattern="'image/*'"
+    ngf-accept="'image/*'" ngf-max-size="10MB" ngf-min-height="100" 
+    ngf-resize="{width: 100%, height: 100%}">Select</button>
+
+                    {{userData.picFile.name}}
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">ID:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="Username" value="" placeholder="{{userData.username}}" style="width:50vw;height:30px;font-size:15px;" disabled="">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Password:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="password" class="form-control" name="Password" value="" placeholder="Password" style="width:50vw;height:30px;font-size:15px;" ng-model="userData.password">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Confirmed</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="password" class="form-control" name="Confirm Password" value="" placeholder="Confirm Password" style="width:50vw;height:30px;font-size:15px;" ng-model="userData.confirm_password" ng-blur="checkPassword()">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Firstname:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="Firstname" value="{{userData.firstname}}" placeholder="Firstname" style="width:50vw;height:30px;font-size:15px;" ng-model="userData.firstname">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Lastname:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="Lastname" value="{{userData.lastname}}" placeholder="Lastname" style="width:50vw;height:30px;font-size:15px;" ng-model="userData.lastname">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Nickname:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="Display Name" value="{{userData.nickname}}" placeholder="Display Name" style="width:50vw;height:30px;font-size:15px;" ng-model="userData.nickname">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Email:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="email" class="form-control" name="Email" value="{{userData.email}}" placeholder="Email" style="width:50vw;height:30px;font-size:15px;" disabled="">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Detail:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <textarea rows="3" cols="100%" class="form-control" name="More Detail" value="" placeholder="Detail..." style="width:50vw;height:60px;font-size:15px;resize:none;" ng-model="userData.detail" ></textarea>
+                    </span>
+                  </div>
+                </div>
+
+                
+
+                <br/>
+                <div class="SignUpButton-1-1">
+                  <button type="submit" class="" style="width:80vw;height:30px;font-size:18px;" ng-click="editUser()">Save</button>
+                </div>
+                <h3>Upload Percentage: {{userData.progressPercentage}}%</h3>
+                <h3>{{userData.msg}}</h3>
+
+                <div class="SignUpButton-1-1">
+
+        </div>
+      </div>
+    </div>

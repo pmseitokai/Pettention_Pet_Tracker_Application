@@ -1,0 +1,145 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToPetProfile()">
+                <span><i class="material-icons md-70" >&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3">
+              <div class="TextTitleBar-3-1">
+                <span>Edit Pet Profile</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+        <div class="SignUpForm-1" style="height:100%">
+                <br/><br/>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-6">
+                    <span style="font-size:22px;">Pet profile</span>
+                  </div>
+                  <div class="col-xs-5">
+                    <span style="font-size:15px;">
+                        <div style="width:100px;height:100px;">
+                            <img src="{{petData.picture}}" class="home_user_pic" style="border-radius:50%;">
+                        </div>
+                    </span>
+                  </div>
+                  <div class="col-xs-1">
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Picture:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <button class="btn-group" ngf-select ng-model="petData.picFile" name="picFile" ngf-pattern="'image/*'"
+    ngf-accept="'image/*'" ngf-max-size="10MB" 
+    ngf-resize="{width: 100%, height: 100%}">Select</button>
+
+                    {{petData.picFile.name}}
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Name:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="Name" value="{{petData.name}}" placeholder="Name" style="width:50vw;height:30px;font-size:15px;" ng-model="petData.name" >
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Gender:</span>
+                  </div>
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">
+                      <input type="radio" ng-model="petData.gender" value="Male">Male
+                    </span>
+                  </div>
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">
+                      <input type="radio" ng-model="petData.gender" value="Female">Female
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Type:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <select style="width:50vw;height:20px;font-size:15px;" ng-model="petData.type">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Birthdate:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span>
+                      <input type="date" value="" name="birth_date" style="width:50vw;height:20px;font-size:15px;" ng-model="petData.birth_date" max="{{currentDate}}"/>
+                    </span>
+                  </div>
+                </div>
+
+                <!--<div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Age:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="number" name="quantity" min="1" max="100" style="width:50vw;height:20px;font-size:15px;" >
+                    </span>
+                  </div>
+                </div>-->
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Detail:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <textarea rows="3" cols="100%" class="form-control" name="More Detail" value="" placeholder="More detail..." style="width:50vw;height:60px;font-size:15px;resize:none;" ng-model="petData.detail" ></textarea>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">GPS SERIAL:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="GPS SERIAL" value="{{petData.gps_serial}}" placeholder="GPS SERIAL" style="width:50vw;height:30px;font-size:15px;" ng-model="petData.gps_serial" ng-blur="checkGpsSerial(petData.gps_serial)">
+                    </span>
+                  </div>
+                  <h5>{{petData.checkMessage}}</h5>
+                </div>
+
+                <br/>
+                <div class="SignUpButton-1-1">
+                  <button type="submit" class="" style="width:80vw;height:30px;font-size:18px;" ng-click="editPetDataById()">Save</button>
+                </div>
+                <h3>Upload Percentage: {{petData.progressPercentage}}%</h3>
+                <h3>{{petData.editMessage}}</h3>
+
+        </div>
+      </div>
+    </div>

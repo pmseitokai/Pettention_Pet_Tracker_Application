@@ -1,0 +1,43 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToMissing()">
+                <span><i class="material-icons md-70" >&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3">
+              <div class="TextTitleBar-3-1">
+                <span>Missing Pet Search</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+
+        <div style="width:100%;text-align:center">
+          <h3>Enter the Pet ID to search Missing Pet Info.</h3>
+          <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Pet ID:</span>
+                  </div>
+                  <div class="col-xs-8">
+                    <span style="font-size:15px;">
+                      <input type="text" class="form-control" name="PET ID" value="" placeholder="PET ID" style="width:50vw;height:30px;font-size:15px;" ng-model="petData.pet_id" >
+                    </span>
+                  </div>
+          </div>
+          <br>
+          <div class="SignUpButton-1-1">
+                  <button type="submit" class="" style="width:80vw;height:50px;" ng-click="searchMissingPetByPetId()">Search</button>
+        </div>
+        <br>
+        {{searchMessage}}
+        <br>
+          <div id="pet_data" style="width:90%;margin-left:5%;margin-right:5%" ng-click="goToMissingTrack(petData)" ng-style="missingPet">
+        </div>
+
+        </div>
+
+</div>

@@ -1,0 +1,64 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToFirstPage()">
+                <span><i class="material-icons md-70">&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3">
+              <div class="TextTitleBar-3-1">
+                <span>Sign Up</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+        <div class="SignUpForm-1" style="height:100%">
+                <br/><br/>
+                <span style="font-size:22px;">Sign up</span><br/><br/>
+                <div class="SignUpForm-1-1">
+                  <input type="text" class="form-control" name="Username" value="" placeholder="Username" style="width:80vw;height:40px;font-size:20px;" ng-model="data.username" ng-blur="checkUsername(data.username)">
+                  <h5>{{data.checkMessage}}</h5>
+                </div>
+                <div class="SignUpForm-1-1">
+                  <input type="password" id="signup_pass" class="form-control" name="Password" value="" placeholder="Password" style="width:80vw;height:40px;font-size:20px;" ng-model="data.password" required>
+                </div>
+                <div class="SignUpForm-1-1">
+                  <input type="password" id="signup_con_pass" class="form-control" name="ConfirmPassword" value="" placeholder="Confirm Password" style="width:80vw;height:40px;font-size:20px;" ng-model="data.confirm_password" ng-blur="checkPassword()" required>
+                </div>
+                <div class="SignUpForm-1-1">
+                  <input type="text" class="form-control" name="Firstname" value="" placeholder="Firstname" style="width:80vw;height:40px;font-size:20px;" ng-model="data.firstname" required>
+                </div>
+                <div class="SignUpForm-1-1">
+                  <input type="text" class="form-control" name="Lastname" value="" placeholder="Lastname" style="width:80vw;height:40px;font-size:20px;" ng-model="data.lastname" required>
+                </div>
+                <div class="SignUpForm-1-1">
+                  <input type="text" class="form-control" name="Display Name" value="" placeholder="Display Name" style="width:80vw;height:40px;font-size:20px;" ng-model="data.nickname" required>
+                </div>
+                <div class="SignUpForm-1-1 row">
+                  <div class="col-xs-4">
+                    <span style="font-size:15px;">Gender:</span>
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="radio" ng-model="data.gender" value="M"><span style="font-size:15px;">Male</span>
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="radio" ng-model="data.gender" value="F"><span style="font-size:15px;">Female</span>
+                  </div>
+                </div>
+                <div class="SignUpForm-1-1">
+                  <input type="email" class="form-control" name="Email" value="" placeholder="Email" style="width:80vw;height:40px;font-size:20px;" ng-model="data.email" >
+                  <h5>{{data.checkEmailMessage}}</h5>
+                </div>
+                <button ng-click="checkEmail(data.email)">Check Email</button><h2>{{data.successMessage}}</h2>
+
+                <div class="SignUpButton-1-1">
+                  <button type="submit" class="" style="width:80vw;height:30px;font-size:18px;" ng-click="checkSignup()">Sign Up</button>
+                </div>
+                
+
+        </div>
+      </div>
+    </div>

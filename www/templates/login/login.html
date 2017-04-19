@@ -1,0 +1,35 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToFirstPage()">
+                <span><i class="material-icons md-70">&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3">
+              <div class="TextTitleBar-3-1">
+                <span>Log In</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+        <div class="SignUpForm-1" style="height:100%">
+                <br/><br/><br/><br/>
+                <span>Log in</span><br/><br/>
+                <div class="SignUpForm-1-1">
+                  <input type="text" class="form-control" name="Username or Email" value="" placeholder="Username or Email" style="width:80vw;height:50px;" ng-model="data.username" ng-blur="getUser(data.username)">
+                </div><br/>
+                <div class="SignUpForm-1-1">
+                  <input type="password" class="form-control" name="Password" value="" placeholder="Password" style="width:80vw;height:50px;" ng-model="data.password">
+                </div><br/><br/>
+                {{data.errMsg}}
+                <br/>
+                <div class="SignUpButton-1-1">
+                  <button type="submit" class="" style="width:80vw;height:50px;" ng-click="checkLogin()">Log In</button>
+                </div><br/><br/><p style="text-align:right;" ng-click="toForget()">Forgot password?</p><br/><br/>
+
+        </div>
+      </div>
+    </div>

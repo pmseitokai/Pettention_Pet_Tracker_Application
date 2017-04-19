@@ -1,0 +1,50 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToHome()">
+                <span><i class="material-icons md-70" >&#xE5CB;</i></span>
+              </div>
+            </div>
+
+            <div class="TextTitleBar-3" style="height:auto">
+              <div class="TextTitleBar-3-1">
+                <span>Missing Pet</span>
+              </div>              
+            </div>
+        </div>
+
+<div class="" style="width:100%;">
+        <span style="text-align:center">
+        <br>
+        <div class="SignUpButton-1-1" style="font-size : 1em">
+                  <button type="submit" class="" style="width:25vw;height:50px;" ng-click="goToSearch()">Search GPS</button>
+                  &nbsp;
+                  <button type="submit" class="" style="width:25vw;height:50px;" ng-click="goToSearchType()">Search Type</button>
+                  <button type="submit" class="" style="width:25vw;height:50px;" ng-click="goToSearchId()">Search ID</button>
+        </div>
+        </span>
+        <br>
+        <div style="width:90%;border:2px solid black;margin-left:5%;margin-right:5%" ng-repeat="petData in petData" ng-click="goToMissingTrack(petData)">
+        <br>
+          <table>
+            <tr>
+              <td rowspan="2">
+                Picture: <img src="{{petData.picture}}" width="80px" height="100px">
+              </td>
+              <td>
+                Pet ID: {{petData.pet_id}}
+              </td>
+              <td>
+                &nbsp;Name: {{petData.name}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!--Last Seen: {{petData.date_time}}-->
+              </td>
+            </tr>
+          </table>
+          <br>
+        </div>
+</div>

@@ -1,0 +1,109 @@
+    <div class="Background-1">
+        
+        <div class="Header-1">
+            <div class="MenuButton-1">
+              <div class="MenuButton-1-1" ng-click="goToHome()">
+                <span><i class="material-icons md-50">&#xE5D2;</i></span>
+              </div>
+            </div>
+
+            <div class="UserLocationTitleBar-1">
+              <div class="UserLocationTitleBar-1-1">
+                <span><i class="material-icons md-30" ng-click="currentLocation()">&#xE55C;</i></span>
+              </div>     
+            </div>
+
+            <div class="TextTitleBar-2">
+              <div class="TextTitleBar-2-1">
+                <span><i>Pet</i> Tention</span>
+              </div>              
+            </div>
+        </div>
+
+
+        <div class="MapHomePageArea-1">
+          <div id="map_canvas" style="width:100%;height:40vh;">
+            
+          </div>
+        </div>
+
+
+        <div class="MyPetsTable-1">
+            <div class="TableStyle-1">
+              <table>
+                  <tr>
+                      <td colspan="2" class="MyPetsHeader-1">
+                        <span>MY&ensp;PETS</span>
+                      </td>
+                      <!--<td class="MyPetsHeader-2">
+                        <span><i class="material-icons md-30" ng-click="goToAddPet()">&#xE147;</i></span>
+                      </td>-->
+                  </tr>
+              </table>
+
+
+
+              <!--====================Auto Run Pet Info.===================-->
+              <div ng-repeat="data in petLocation">
+              <table id="divShow" style="background-color:#ffe6ba;"> 
+
+                <tr>
+                  <td class="TdGpsStatusOn">
+                    <span class="PanToPetPin" >
+                      <button type="button" ng-click="showInfowindow(data.index)">
+                        <div style="padding-top: 3px;">
+                          <i class="material-icons md-24">&#xE1B7;</i>
+                        </div>
+                      </button>
+                    </span>
+                  </td>
+
+                  <td class="TdPetImg">
+                    <span>
+                      <div class="MyPetImgFrame-1" ng-click="showInfowindow(data.index)">
+                        <div class="MyPetImgFrame-1-1">
+                          <div class="MyPetImgFrame-1-1-1">
+                            <img src="{{data.picture}}"/>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </td>
+
+                  <td class="TdPetInfo">
+                    <div class="MyPetInfo-1">
+                      <div class="MyPetInfo-1-1">
+                        <div class="MyPetInfo-1-1-1">
+                          <table>
+
+                            <tr>
+                              <td class="MyPetInfoName-1" ng-click="showInfowindow(data.index)">Name</td>
+                              <td class="MyPetInfoName-2" ng-click="showInfowindow(data.index)">{{data.pet_id}}_{{data.name}}</td>
+                            </tr>
+
+                            <tr>
+                              <td class="MyPetInfoLast-1" ng-click="showInfowindow(data.index)">Updated</td>
+                              <td class="MyPetInfoLast-2" ng-click="showInfowindow(data.index)">{{data.date_time}}</a></td>
+                            </tr>
+
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+
+                </tr>
+
+              </table>
+              </div>
+              <!--====================Example of Above======================-->
+                
+            </div>
+        </div>
+
+
+
+           
+
+          
+    </div>
